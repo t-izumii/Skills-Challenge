@@ -26,10 +26,9 @@ export default class vendingMachineButton {
 
     purchase(){
         if (!this.isPressed) throw new Error('ボタンが押されていない');
-
         const product = this.productSlot.purchase();
-
         this.isPressed = false;
+        console.log(product, this.getProduct())
         return product
     }
 }

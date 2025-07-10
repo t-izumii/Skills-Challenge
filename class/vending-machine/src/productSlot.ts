@@ -34,6 +34,7 @@ export default class productSlot {
 
     restock(amount: number) {
         this.stock = Math.min(this.maxStock, this.stock + amount);
+        console.log(this.stock);
     }
 
 
